@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>免费博客搭建</title>
+    <url>/2019/07/13/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</url>
+    <content><![CDATA[<p>利用 GitHub 搭建 blog，减少服务器维护成本。</p>
+<h2 id="github环境步骤："><a href="#github环境步骤：" class="headerlink" title="github环境步骤："></a>github环境步骤：</h2><p>1.创建username.github.io仓库，地址就是这个。username是GitHub的username</p>
+<p>2.随便添加个index.html。URL地址是上面的名字，如果打不开可以在settings找到github pages。点一下就能打开。</p>
+<p>3.用自己的域名解析，需要设置Custom domain。</p>
+<p>gitee环境步骤：</p>
+<h2 id="安装NodeJs需要配置插件仓库。"><a href="#安装NodeJs需要配置插件仓库。" class="headerlink" title="安装NodeJs需要配置插件仓库。"></a>安装NodeJs需要配置插件仓库。</h2><p>因为NodeJs使用国外仓库，下载插件相当慢。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F;方法一：安装cnpm插件，配置国内地址相当于私服，用私服cnpm install</span><br><span class="line">npm install -g cnpm --registry&#x3D;https:&#x2F;&#x2F;registry.npm.taobao.org</span><br><span class="line">&#x2F;&#x2F;方法二：设置npm仓库地址 </span><br><span class="line">npm config set registry https:&#x2F;&#x2F;registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
+
+<h2 id="使用node命令安装hexo框架"><a href="#使用node命令安装hexo框架" class="headerlink" title="使用node命令安装hexo框架"></a>使用node命令安装hexo框架</h2><figure class="highlight plain"><figcaption><span>js </span></figcaption><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F;安装hexo</span><br><span class="line">npm install -g hexo-cli </span><br><span class="line">&#x2F;&#x2F;在你的文件夹初始化</span><br><span class="line">hexo init </span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;启动 start</span><br><span class="line">hexo s</span><br><span class="line">&#x2F;&#x2F;创建新文章</span><br><span class="line">hexo n</span><br><span class="line">&#x2F;&#x2F;清理</span><br><span class="line">hexo clean</span><br><span class="line">&#x2F;&#x2F;生成(generate)</span><br><span class="line">hexo g</span><br><span class="line">&#x2F;&#x2F;安装git插件，需要修改_config.yml</span><br><span class="line">npm install --save hexo-deployer-git</span><br><span class="line">&#x2F;&#x2F;上传到git</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+
+<p>样式</p>
+<p>去github上找，将样式clone 到 \blog\themes，修改_cofing.yml的themes</p>
+<p>维护</p>
+<p>blog文件目录：/source/_posts</p>
+<p>删除文章</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">在&#x2F;source&#x2F;_posts删除，hexo g</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>服务</category>
+      </categories>
+      <tags>
+        <tag>搭建</tag>
+      </tags>
+  </entry>
+</search>

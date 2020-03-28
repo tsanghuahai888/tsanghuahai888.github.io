@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>免费博客搭建</title>
-    <url>/2019/07/13/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</url>
+    <url>/blog/2019/07/13/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</url>
     <content><![CDATA[<p>利用 GitHub 搭建 blog，减少服务器维护成本。</p>
 <h2 id="github环境步骤："><a href="#github环境步骤：" class="headerlink" title="github环境步骤："></a>github环境步骤：</h2><p>1.创建username.github.io仓库，地址就是这个。username是GitHub的username</p>
 <p>2.随便添加个index.html。URL地址是上面的名字，如果打不开可以在settings找到github pages。点一下就能打开。</p>
